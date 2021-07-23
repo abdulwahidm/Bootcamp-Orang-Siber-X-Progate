@@ -9,4 +9,14 @@ seperti foods, karena variable akan mengandung banyak element.
 '''
 
 foods = ['gulai', 'sushi', 'mie']
-print(foods)
+print(foods) #akan menampilkan ['gulai', 'sushi', 'mie']
+
+
+'''
+Setiap element list dinomori 0, 1, 2, ....
+Ini disebut nomor indeks. Nomor indeks dimulai dari 0. 
+Kita bisa mendapatkan element individual dengan menulis list[index].
+'''
+
+print('Saya suka ' + foods[2]) #megambil element dengan index 2 dari list foods
+#pada console akan menampilkan `Saya suka mie`
