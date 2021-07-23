@@ -1,7 +1,7 @@
 # Menjalankan Python
 Untuk menjalankan Python ada banyak cara yang bisa dilakukan. kita bisa menggunakan shell, terminal atau menggunakan IDE (Integrated Development Environment). Di bawah ini adalah langkah-langkah menjalankan Python dengan cara yang paling mudah.
 
-## Linux $ MacOs
+## Linux dan MacOs
 1. Buka terminal CTRL+ALT+T
 2. Ketik `python` maka kita akan masuk ke Python shell.
 3. Tuliskan script Python kita, contoh: `print("Selamat datang di Python").` jika sudah tekan tombol ENTER, dan script Python akan dijalankan/eksekusi.
