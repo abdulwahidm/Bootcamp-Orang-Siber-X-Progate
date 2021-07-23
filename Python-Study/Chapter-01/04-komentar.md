@@ -26,7 +26,7 @@ ditutup dengan kutip dua 3 kali juga
 
 ```#print("Welcome")```
 
-# komentar bisa berisi spesial karakter !@#$%^&*(),./;'[]\
+```#komentar bisa berisi spesial karakter !@#$%^&*(),./;'[\```
 
 ```python
 #mencetak nama
@@ -37,4 +37,4 @@ print("Budi")
 print(123)
 ```
 
-Saat anda menjalankan script diatas, Anda akan melihat output berupa Hello World, Budi dan 123, karena tulisan/komentar yang ditulis tidak dieksekusi.
+Saat anda menjalankan script diatas, Anda akan melihat output berupa `Hello World`, `Budi` dan `123`, karena tulisan/komentar yang ditulis tidak dieksekusi.
