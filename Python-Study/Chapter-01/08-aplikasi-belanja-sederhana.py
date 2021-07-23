@@ -1,8 +1,11 @@
 # Berikan 2 ke variable apple_price 
 apple_price = 2
 
-# Berikan 5 ke variable count 
-count = 5
+# Terima jumlah apel dengan menggunakan input(), dan berikan hasilnya ke variable input_count 
+input_count = input('Mau berapa apel?: ')
+
+# Ubah variable input_count ke integer, dan berikan hasilnya ke variable count 
+count = int(input_count)
 
 # Berikan hasil dari apple_price * count ke variable total_price 
 total_price = apple_price * count
