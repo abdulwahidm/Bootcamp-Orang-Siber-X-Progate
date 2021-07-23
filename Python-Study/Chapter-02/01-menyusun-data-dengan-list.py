@@ -20,3 +20,9 @@ Kita bisa mendapatkan element individual dengan menulis list[index].
 
 print('Saya suka ' + foods[2]) #megambil element dengan index 2 dari list foods
 #pada console akan menampilkan `Saya suka mie`
+
+## Contoh 2:
+fruits = ['apel', 'pisang', 'jeruk']
+
+print(fruits[0]) #jeruk
+print('Saya suka ' + fruits[2])
