@@ -7,4 +7,4 @@ for number in numbers:
     # Lewatkan loop untuk angka yang dapat di bagi 3
     if number % 3 == 0:
         continue
-    print(number)
+    print(number) #pada console yang angka 3, 6, 9 tidak tercetak
