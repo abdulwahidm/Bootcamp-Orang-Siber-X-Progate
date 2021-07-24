@@ -3,9 +3,6 @@
 # mari kita memperbarui aplikasi belanja yang sudah kita buat di Python 1.
 # kita akan mencetak hasil menurut jumlah buah yang dimasukkan pada console.
 
-# Buat dictionary dengan kunci dan nilai, dan tetapkan ke variable items 
-
-# Berikan 20 ke variable money
 money = 20
 items = {'apel': 2, 'pisang': 4, 'jeruk': 6}
 
@@ -25,12 +22,11 @@ for item_name in items:
         print('Anda telah membeli ' + input_count + ' ' + item_name)
         money -= total_price
         
-        # Ketika money sama dengan 0, cetak 'Dompet Anda kosong' dan hentikan loop
         if money == 0:
             print('Dompet Anda kosong')
             break
     else:
         print('Uang Anda tidak mencukupi')
         print('Anda tidak dapat membeli ' + item_name + ' sebanyak itu')
-# Menggunakan variable money dan tipe conversion, cetak 'Uang Anda tinggal ___ dolar'
+
 print('Uang Anda tinggal ' + str(money) + ' dolar')
