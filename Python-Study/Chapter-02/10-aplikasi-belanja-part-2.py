@@ -5,23 +5,32 @@
 
 # Buat dictionary dengan kunci dan nilai, dan tetapkan ke variable items 
 
+# Berikan 20 ke variable money
+money = 20
 items = {'apel': 2, 'pisang': 4, 'jeruk': 6}
 
 for item_name in items:
     print('--------------------------------------------------')
+    print('Anda memiliki ' + str(money) + ' dolar di dompet Anda')
     print('Harga setiap ' + item_name + ' ' + str(items[item_name]) + ' dolar')
     
-    # Dapatkan nilai menggunakan input(), dan berikan ke variable input_count 
-    input_count = input('Mau berapa ' + item_name + '?: ')
-    
-    # Cetak 'Anda akan membeli ___ ___' menggunakan input_count dan item_name
+    input_count = input('Mau berapa ' + item_name + '?:')
     print('Anda akan membeli ' + input_count + ' ' + item_name)
     
-    # Ubah input_count ke integer dan berikan ke variable count 
     count = int(input_count)
-    
-    # Kalikan harga setiap item dan variable count, dan berikan ke variable total_price 
     total_price = items[item_name] * count
-    
-    # Dengan menggunakan total_price dan type conversion, cetak 'Harga total adalah ___ dolar'
     print('Harga total adalah ' + str(total_price) + ' dolar')
+    
+    if money >= total_price:
+        print('Anda telah membeli ' + input_count + ' ' + item_name)
+        money -= total_price
+        
+        # Ketika money sama dengan 0, cetak 'Dompet Anda kosong' dan hentikan loop
+        if money == 0:
+            print('Dompet Anda kosong')
+            break
+    else:
+        print('Uang Anda tidak mencukupi')
+        print('Anda tidak dapat membeli ' + item_name + ' sebanyak itu')
+# Menggunakan variable money dan tipe conversion, cetak 'Uang Anda tinggal ___ dolar'
+print('Uang Anda tinggal ' + str(money) + ' dolar')
