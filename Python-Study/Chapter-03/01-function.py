@@ -14,3 +14,13 @@ def print_hand():
 
 # Panggil function print_hand 
 print_hand()
+
+
+# Untuk memberikan argument ke sebuah function, function harus mempunyai variable untuk menerimanya, 
+# variable ini di sebut parameter. Pada contoh di bawah, 
+# function greet memiliki parameter name untuk menerima sebuah argument.
+
+def greet(name):
+    print('Halo ' + name)
+
+greet("Abdul")
