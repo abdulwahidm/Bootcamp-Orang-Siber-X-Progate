@@ -8,19 +8,13 @@
 # Untuk memanggil sebuah function, Anda cukup menulis function_name(). 
 # Perlu diingat bahwa function hanya dapat dipanggil setelah Anda mendefinisikannya.
 
-# Definisikan function print_hand 
-def print_hand():
-    print('Anda memilih: Batu')
-
-# Panggil function print_hand 
-print_hand()
-
 
 # Untuk memberikan argument ke sebuah function, function harus mempunyai variable untuk menerimanya, 
 # variable ini di sebut parameter. Pada contoh di bawah, 
 # function greet memiliki parameter name untuk menerima sebuah argument.
 
-def greet(name):
-    print('Halo ' + name)
+def print_hand(hand):
+    print('Anda memilih: ' + hand)
 
-greet("Abdul")
+print_hand('Batu')
+print_hand('Kertas')
