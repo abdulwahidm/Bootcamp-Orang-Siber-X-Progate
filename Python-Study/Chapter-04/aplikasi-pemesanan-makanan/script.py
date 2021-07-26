@@ -5,15 +5,20 @@ menu_item2 = MenuItem('Kue Coklat', 4)
 menu_item3 = MenuItem('Kopi', 3)
 menu_item4 = MenuItem('Jus Jeruk', 2)
 
-# Tetapkan variable menu_items ke list dari instance MenuItem 
 menu_items = [menu_item1, menu_item2, menu_item3, menu_item4]
 
-# Definisikan variable index dan tetapkan 0 kepadanya
 index = 0
-
 for menu_item in menu_items:
-    # Cetak dengan format '0. Roti Lapis: $5' untuk setiap index
     print(str(index) + '. ' + menu_item.info())
-    
-    # Tambahkan 1 ke variable index
     index += 1
+
+print('--------------------')
+
+# Dapatkan input dari console dan tetapkan hasilnya ke variable order
+order = int(input('Masukkan nomor menu: '))
+
+# Tetapkan variable selected_menu ke item menu yang dipilih
+selected_menu = menu_items[order]
+
+# Cetak 'Item yang dipilih: ____'
+print('Item yang dipilih: ' + selected_menu.name)
