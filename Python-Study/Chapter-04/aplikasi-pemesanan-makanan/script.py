@@ -1,21 +1,14 @@
-class MenuItem:
-    # Tambahkan parameter name dan price
-    def __init__(self, name, price):
-        self.name = name
-        self.price = price
+from menu_item import MenuItem
 
-    def info(self):
-        return self.name + ': $' + str(self.price)
-
-    def get_total_price(self, count):
-        total_price = self.price * count
-        return total_price
-
-
-# Tambahkan 'Roti Lapis' dan 5 sebagai argument
 menu_item1 = MenuItem('Roti Lapis', 5)
+menu_item2 = MenuItem('Kue Coklat', 4)
+menu_item3 = MenuItem('Kopi', 3)
+menu_item4 = MenuItem('Jus Jeruk', 2)
 
-print(menu_item1.info())
+# Tetapkan variable menu_items ke list dari instance MenuItem 
+menu_items = [menu_item1, menu_item2, menu_item3, menu_item4]
 
-result = menu_item1.get_total_price(4)
-print('Total harga adalah $' + str(result))
+# Buat loop for
+for menu_item in menu_items:
+    print(menu_item.info())
+
