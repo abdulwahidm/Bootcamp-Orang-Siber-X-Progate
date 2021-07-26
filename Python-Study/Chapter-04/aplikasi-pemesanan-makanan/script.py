@@ -14,11 +14,11 @@ for menu_item in menu_items:
 
 print('--------------------')
 
-# Dapatkan input dari console dan tetapkan hasilnya ke variable order
 order = int(input('Masukkan nomor menu: '))
-
-# Tetapkan variable selected_menu ke item menu yang dipilih
 selected_menu = menu_items[order]
-
-# Cetak 'Item yang dipilih: ____'
 print('Item yang dipilih: ' + selected_menu.name)
+
+count = int(input('Jumlah pesanan (diskon 10% untuk 3 atau lebih): '))
+result = selected_menu.get_total_price(count)
+
+print('Total harga adalah $' + str(result))
