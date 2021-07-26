@@ -18,6 +18,7 @@
   <!-- Deklarasikan variable $sum dibawah -->
   <?php
     $sum = 8 + 9;
+    $sum += 3;
     echo $sum;
   ?>
 
