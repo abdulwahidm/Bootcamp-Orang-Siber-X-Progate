@@ -1,6 +1,6 @@
-# Import class MenuItem menggunakan 'from' 'import'
 from menu_item import MenuItem
 
-# Wariskan class MenuItem dan definisikan class Drink 
 class Drink(MenuItem):
-    pass
+    # Definisikan method info
+    def info(self):
+        return self.name + ': $' + str(self.price) + ' (' + str(self.volume) + 'mL)'
