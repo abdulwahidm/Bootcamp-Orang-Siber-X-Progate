@@ -1,10 +1,13 @@
 from menu_item import MenuItem
 
 class Food(MenuItem):
-    # Definisikan method __init__ 
     def __init__(self, name, price, calorie_count):
-        self.name = name
-        self.price = price
+        # Menggunakan super() panggil __init__() dari class induk
+        super().__init__(name, price)
+        
+        # Hapus 2 baris di bawah
+      
+        
         self.calorie_count = calorie_count
     
     def info(self):
