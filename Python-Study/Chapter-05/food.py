@@ -1,6 +1,6 @@
-# Import class MenuItem menggunakan 'from' 'import'
 from menu_item import MenuItem
 
-# Wariskan class MenuItem dan definisikan class Drink 
 class Food(MenuItem):
-    pass
+    # Definisikan method calorie_info 
+    def calorie_info(self):
+        print('kkal: ' + str(self.calorie_count))
