@@ -7,19 +7,20 @@
 </head>
 <body>
 
-  <!-- Deklarasikan variable $fruit dibawah -->
+  
   <?php
-    $fruit = 'Apel';
-    echo $fruit;
+    $name = 'Ninja Ken';
+    // Cetak "Halo, ____" menggunakan variable $name.
+    echo 'Halo, '.$name; // Cara 1 penggabungan String
   ?>
 
   <br>
 
-  <!-- Deklarasikan variable $sum dibawah -->
   <?php
-    $sum = 8 + 9;
-    $sum += 3;
-    echo $sum;
+
+    $greeting = 'Selamat datang';
+    echo "{$greeting}, {$name}"; // Cara 2 penggabungan String dengan double quote
+
   ?>
 
 </body>
