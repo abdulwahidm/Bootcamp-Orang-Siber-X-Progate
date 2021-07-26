@@ -7,23 +7,18 @@
 </head>
 <body>
 
+  <!-- Deklarasikan variable $fruit dibawah -->
   <?php
-    // echo 'Hello, world!'
-    echo 'Hello, world!';
-  ?>
-  
-  <br>
-
-  <?php
-    // echo 7 * 2
-    echo 7 * 2;
+    $fruit = 'Apel';
+    echo $fruit;
   ?>
 
   <br>
 
+  <!-- Deklarasikan variable $sum dibawah -->
   <?php
-    // echo 8 % 3
-    echo 8 % 3;
+    $sum = 8 + 9;
+    echo $sum;
   ?>
 
 </body>
