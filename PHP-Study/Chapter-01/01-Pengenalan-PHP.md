@@ -25,3 +25,44 @@ Kita dapat menggunakan echo untuk mencetak karakter yang disebut string. Gunakan
     echo 'Hello World';  // Hasil: Hello World
 ?>
 ```
+
+### Variable
+
+Variable diibaratkan kotak untuk menyimpan data. Kita mendefinisikan variable dengan menambah simbol $ diawal. Semua tipe data dapat disimpan menggunakan sintaksis ```$variableName = nilai;```. Dalam pemrograman, ```= `` artinya untuk menentukan nilai di kanan pada apa yang terletak di sebelah kiri.  
+
+```php
+<?php 
+    $name = 'John'; // menyimnpan John ke variable name
+
+    echo $name; // Hasil John
+?>
+```
+
+### Penggabungan String
+
+1. Penggabungan string dengan operator dot(.)
+
+```php
+    $lesson = 'PHP';
+    echo $lesson.'Pemula';
+    // Hasil: PHP Pemula
+
+    $level = 'Pemula';
+    echo $lesson.$level;
+    // Hasil: PHP Pemula
+```
+
+2. Penggabungan string dengan substistusi variable
+
+```php
+    $name = 'Ninja Ken';
+    echo "Halo {$name}"; 
+    // Hasil: Halo, Ninja Ken
+
+    echo 'Halo, {$name}';
+    // Hasil: Halo, {$name}
+    // {$name} tidak dicetak sebagai variable dari string
+    // karena pada cara substitusi variable harus menggunakan double quote
+```
+
+
