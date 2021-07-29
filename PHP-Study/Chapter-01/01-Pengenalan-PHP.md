@@ -65,4 +65,40 @@ Variable diibaratkan kotak untuk menyimpan data. Kita mendefinisikan variable de
     // karena pada cara substitusi variable harus menggunakan double quote
 ```
 
+### Percabangan
+
+1. Statement if
+
+Statement if memungkinkan kita untuk membuat percabangan kondisional. Jika Anda meletakkan kondisi di dalam () setelah if, code diantara tanda kurung { } akan dijalankan hanya jika kondisi benar. Gambar di bawah menunjukkan bagaimana statement if ditulis.
+
+```php 
+    $x = 20;
+    if($x > 10) {
+        echo '$x lebih besar dari 10'; 
+        // kode akan dijalankan
+    }
+
+    $y = 20;
+    if($y > 30) {
+        echo '$y lebih besar dari 30'; 
+        // kode tidak akan dijalankan karena kondisi false
+    }
+```
+2. Statement else & elseif
+Kita dapat menambahkan code untuk ketika kondisi adalah false. Jika statement if yang cocok salah, code di else akan dijalankan.
+
+
+```php 
+    $x = 20;
+    if($x == 30) { //false
+        echo '$x adalah 30'; 
+        // kode akan dijalankan
+    } else {
+        echo '$x bukan 30';
+        // code ini akan dijalankan
+    }
+
+```
+
+
 
