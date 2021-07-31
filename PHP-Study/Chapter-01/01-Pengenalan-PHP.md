@@ -40,8 +40,8 @@ Variable diibaratkan kotak untuk menyimpan data. Kita mendefinisikan variable de
 
 ### Operator
 
-1. Operator Penugasan (assignment)
-Digunakan untuk menuliskan nilai pada suatu variabel. Operator penugasan yang paling umum digunakan adalah operator 'sama dengan' =. Operator ini digunakan untuk mengisi variabel yang ada di sebelah kiri dengan nilai yang ada di sebelah kanan. Misalnya $x = 2 berarti kita mengisi variabel $x dengan nilai 2. Atau $x = $y yang berarti kita mengisi variabel $x dengan nilai yang ada di dalam variabel $y.
+#### 1. Operator Penugasan (assignment)
+    Digunakan untuk menuliskan nilai pada suatu variabel. Operator penugasan yang paling umum digunakan adalah operator 'sama dengan' =. Operator ini digunakan untuk mengisi variabel yang ada di sebelah kiri dengan nilai yang ada di sebelah kanan. Misalnya $x = 2 berarti kita mengisi variabel $x dengan nilai 2. Atau $x = $y yang berarti kita mengisi variabel $x dengan nilai yang ada di dalam variabel $y.
 
 ```php
     $x = 20;
@@ -51,9 +51,8 @@ Digunakan untuk menuliskan nilai pada suatu variabel. Operator penugasan yang pa
     echo "nilai x setelah assignment: $x <br>";
 ```
 
-2. Opeeator Aritmatika
-
-Operator Aritmatika digunakan untuk melakukan operasi aritmatik terhadap nilai numerik, seperti penjumlahan, pengurangan, perkalian, pembagian, dan sebagainya.
+#### 2. Operator Aritmatika
+    Operator Aritmatika digunakan untuk melakukan operasi aritmatik terhadap nilai numerik, seperti penjumlahan, pengurangan, perkalian, pembagian, dan sebagainya.
 
 ```php
     $x = 20;
@@ -63,45 +62,45 @@ Operator Aritmatika digunakan untuk melakukan operasi aritmatik terhadap nilai n
     echo $z;
 ```
 
-3. Operator Perbandingan
+#### 3. Operator Perbandingan
 
-#### Sama dengan
+##### 3.1 Operator Sama dengan
 ``==``	Sama dengan	``$x == $y``	
 TRUE bila nilai ``$x`` sama dengan ``$y``
 
-#### Identik
+##### 3.2 Operator Identik
 ``===``	Identik	``$x === $y``	
 TRUE bila nilai $x sama dengan $y, DAN tipe data keduanya sama
 
-#### Tidak sama dengan
+##### 3.3 Operator Tidak sama dengan
 ``!=``	Tidak sama dengan ``$x != $y``	
 TRUE bila nilai ``$x`` tidak sama dengan ``$y``
 
 ``<>``	TIdak sama dengan	``$x <> $y``	
 TRUE bila nilai ``$x tidak sama dengan $y``
 
-#### Tidak identik
+##### 3.5 Opearator Tidak identik
 ``!==``	Tidak identik	``$x !== $y``	
 TRUE bila nilai ``$x`` tidak sama dengan ``$y``, 
 ATAU tipe data keduanya berbeda
 
-#### Lebih dari
+##### 3.6 Opearator Lebih dari
 ``>``	Lebih dari ``$x > $y``	
 TRUE bila nilai ``$x`` lebih dari ``$y``
 
-#### Kurang dari
+##### 3.7 Opearator Kurang dari
 ``<``	Kurang dari	``$x < $y``	
 TRUE bila nilai ``$x`` kurang dari ``$y``
 
-#### Lebih dari atau sama dengan
+##### 3.8 OpearatorLebih dari atau sama dengan
 ``>=``	Lebih dari atau sama dengan ``$x >= $y``	
-TRUE bila nilai $x lebih dari atau sama dengan $y
+TRUE bila nilai ``$x`` lebih dari atau sama dengan  ``$y``
 
-#### Kurang dari atau sama dengan
+##### 3.9 Opearator Kurang dari atau sama dengan
 ``<=`` Kurang dari atau sama dengan	``$x <= $y``	
-TRUE bila nilai $x kurang dari atau sama dengan $y
+TRUE bila nilai ``$x`` kurang dari atau sama dengan ``$y``
 
-Semua operator perbandingan digunakan untuk membandingkan dua buah nilai numerik atau string. Output dari operasi ini adalah nilai TRUE atau FALSE.
+Semua operator perbandingan digunakan untuk membandingkan dua buah nilai numerik atau string. Output dari operasi ini adalah nilai ``TRUE`` atau ``FALSE``.
 
 
 ### Penggabungan String
