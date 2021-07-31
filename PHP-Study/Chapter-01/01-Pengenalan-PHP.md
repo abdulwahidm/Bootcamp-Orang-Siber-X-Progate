@@ -41,7 +41,14 @@ Variable diibaratkan kotak untuk menyimpan data. Kita mendefinisikan variable de
 # E. Operator
 
 ## 1. Operator Penugasan (assignment)
-    Digunakan untuk menuliskan nilai pada suatu variabel. Operator penugasan yang paling umum digunakan adalah operator 'sama dengan' =. Operator ini digunakan untuk mengisi variabel yang ada di sebelah kiri dengan nilai yang ada di sebelah kanan. Misalnya $x = 2 berarti kita mengisi variabel $x dengan nilai 2. Atau $x = $y yang berarti kita mengisi variabel $x dengan nilai yang ada di dalam variabel $y.
+    Digunakan untuk menuliskan nilai pada suatu variabel. 
+    Operator penugasan yang paling umum digunakan adalah 
+    operator 'sama dengan' =. Operator ini digunakan untuk 
+    mengisi variabel yang ada di sebelah kiri dengan nilai 
+    yang ada di sebelah kanan. Misalnya $x = 2 berarti 
+    kita mengisi variabel $x dengan nilai 2. Atau $x = $y 
+    yang berarti kita mengisi variabel $x dengan nilai 
+    yang ada di dalam variabel $y.
 
 ```php
     $x = 20;
@@ -52,7 +59,9 @@ Variable diibaratkan kotak untuk menyimpan data. Kita mendefinisikan variable de
 ```
 
 ## 2. Operator Aritmatika
-    Operator Aritmatika digunakan untuk melakukan operasi aritmatik terhadap nilai numerik, seperti penjumlahan, pengurangan, perkalian, pembagian, dan sebagainya.
+    Operator Aritmatika digunakan untuk melakukan operasi 
+    aritmatik terhadap nilai numerik, seperti penjumlahan, 
+    pengurangan, perkalian, pembagian, dan sebagainya.
 
 ```php
     $x = 20;
@@ -65,21 +74,21 @@ Variable diibaratkan kotak untuk menyimpan data. Kita mendefinisikan variable de
 ## 3. Operator Perbandingan
 
 
-### 3.1 Operator sama dengan " == "
+### 3.1 Operator sama dengan ( == )
 
 ```php 
 $x == $y  // TRUE bila nilai $x sama dengan $y 
 ```
 
 
-### 3.2 Operator identik " === "
+### 3.2 Operator identik ( === )
 
 ```php
 $x === $y // TRUE bila nilai $x sama dengan $y, DAN tipe data keduanya sama
 ```
 
 
-### 3.3 Operator tidak sama dengan " != " atau " <> "
+### 3.3 Operator tidak sama dengan ( !== ) atau ( <> )
 
 ```php
 $x != $y // TRUE bila nilai $x tidak sama dengan $y
@@ -87,39 +96,71 @@ $x <> $y // TRUE bila nilai $x tidak sama dengan $y
 ```
 
 
-### 3.4 Opearator tidak identik " !== "
+### 3.4 Opearator tidak identik ( !=)(
 
 ```php
 $x !== $y // TRUE bila nilai $x tidak sama dengan $y ATAU tipe data keduanya berbeda
 ```
 
-### 3.5 Opearator lebih dari " > "
-
+### 3.5 Opearator lebih dari ( > )
 ```php
 $x > $y // TRUE bila nilai $x lebih dari $y
 ```
 
 
-### 3.6 Opearator kurang dari " < "
-
+### 3.6 Opearator kurang dari ( < )
 ```php
 $x < $y	// TRUE bila nilai $x kurang dari $y
 ```
 
 
-### 3.7 Opearator lebih dari atau sama dengan " >= "
+### 3.7 Opearator lebih dari atau sama dengan ( >= )
 
 ```php
 $x >= $y // TRUE bila nilai $x lebih dari atau sama dengan  $y
 ```
 
-### 3.8 Opearator kurang dari atau sama dengan " <= "
+### 3.8 Opearator kurang dari atau sama dengan ( <= )
 
 ```php
 $x <= $y // TRUE bila nilai $x kurang dari atau sama dengan $y
 ```
 
 Semua operator perbandingan digunakan untuk membandingkan dua buah nilai numerik atau string. Output dari operasi ini adalah nilai ``TRUE`` atau ``FALSE``.
+
+## 4. Operator Logika
+
+Operator logika digunakan untuk membandingkan dua pernyataan kondisi. 
+Kondisi yang dimaksud adalah nilai variabel atau hasil perbandingan variabel
+dalam tipe data boolean (TRUE dan FALSE). Operator logika yang tersedia
+diantaranya and, or, xor dan not.
+
+### 4.1 Operator AND ( and atau && )
+```php
+    $x and $y
+    $x && $y	
+    // TRUE hanya bila $x and $y keduanya bernilai TRUE
+```
+
+### 4.2 Operator OR ( or atau || ) 
+
+```php
+    $x or $y
+    $x || $y	
+    TRUE bila salahsatu atau keduanya dari $x atau $y bernilai TRUE
+```
+
+### 4.3 Operator XOR ( xor )
+```php
+$x xor $y	
+// TRUE bila hanya salah satu saja (tidak keduanya) dari $x atau $y bernilai TRUE
+```
+
+### 4.4 Operator NOT ( ! )
+
+```php
+!$x	// TRUE bila variable $x bernilai FALSE
+```
 
 
 # F. Penggabungan String
@@ -171,7 +212,6 @@ Statement if memungkinkan kita untuk membuat percabangan kondisional. Jika Anda 
 ## 2. Statement else & elseif
 Kita dapat menambahkan code untuk ketika kondisi adalah false. Jika statement if yang cocok salah, code di else akan dijalankan.
 
-
 ```php 
     $x = 20;
     if($x == 30) { //false
@@ -183,6 +223,8 @@ Kita dapat menambahkan code untuk ketika kondisi adalah false. Jika statement if
     }
 
 ```
+
+
 
 
 
