@@ -1,14 +1,14 @@
 # A. Apa Itu PHP?
 
-Dengan HTML, ada limitasi bagaimana kita mengontrol apa yang ditampilkan. Dengan menggunakan PHP, Anda dapat mengubah teks yang ditampilkan tergantung audiens dan situasi.
+Dengan HTML, ada limitasi bagaimana kita mengontrol apa yang ditampilkan. Dengan menggunakan PHP, kita dapat mengubah teks yang ditampilkan tergantung audiens dan situasi.
 
 # B . Bagaimana Menulis PHP Code
 
-Code PHP dapat tertanam di dalam HTML. Dengan menggunakan tag PHP spesial ```<?php ... ?>,``` Anda dapat menulis instruksi didalamnya. Code yang ditulis di dalam ```<?php ... ?>``` akan diubah menjadi HTML dan ditampilkan.
+Code PHP dapat tertanam di dalam HTML. Dengan menggunakan tag PHP spesial ```<?php ... ?>,``` kita dapat menulis instruksi didalamnya. Code yang ditulis di dalam ```<?php ... ?>``` akan diubah menjadi HTML dan ditampilkan.
 
 # C. Sintaksis PHP
 
-Titik koma ; digunakan untuk memisahkan statement di PHP. Akan ada error jika sintaksis Anda kurang titik koma, jadi mari berhati-hati! Selain itu, baris-baris yang dimulai dengan // disebut komentar dan tidak dijalankan. Komentar tidak akan mempengaruhi code Anda, namun sangat berguna untuk mendokumentasikan dan membuat catatan.
+Titik koma ; digunakan untuk memisahkan statement di PHP. Akan ada error jika sintaksis kita kurang titik koma, jadi mari berhati-hati! Selain itu, baris-baris yang dimulai dengan // disebut komentar dan tidak dijalankan. Komentar tidak akan mempengaruhi code kita, namun sangat berguna untuk mendokumentasikan dan membuat catatan.
 
 ```php
 <?php
@@ -17,7 +17,7 @@ Titik koma ; digunakan untuk memisahkan statement di PHP. Akan ada error jika si
     echo 'Belajar PHP';
 ?>
 ```
-Kita dapat menggunakan echo untuk mencetak karakter yang disebut string. Gunakan tanda kutip satu ' atau kutip dua " untuk mencetak mereka.
+Kita dapat menggunakan echo untuk mencetak karakter yang disebut string. Gunakan tkita kutip satu ' atau kutip dua " untuk mencetak mereka.
 
 ```php
 <?php
@@ -41,14 +41,15 @@ Variable diibaratkan kotak untuk menyimpan data. Kita mendefinisikan variable de
 # E. Operator
 
 ## 1. Operator Penugasan (assignment)
-    Digunakan untuk menuliskan nilai pada suatu variabel. 
-    Operator penugasan yang paling umum digunakan adalah 
-    operator 'sama dengan' =. Operator ini digunakan untuk 
-    mengisi variabel yang ada di sebelah kiri dengan nilai 
-    yang ada di sebelah kanan. Misalnya $x = 2 berarti 
-    kita mengisi variabel $x dengan nilai 2. Atau $x = $y 
-    yang berarti kita mengisi variabel $x dengan nilai 
-    yang ada di dalam variabel $y.
+
+Digunakan untuk menuliskan nilai pada suatu variabel. 
+Operator penugasan yang paling umum digunakan adalah 
+operator 'sama dengan' =. Operator ini digunakan untuk 
+mengisi variabel yang ada di sebelah kiri dengan nilai 
+yang ada di sebelah kanan. Misalnya $x = 2 berarti 
+kita mengisi variabel $x dengan nilai 2. Atau $x = $y 
+yang berarti kita mengisi variabel $x dengan nilai 
+yang ada di dalam variabel $y.
 
 ```php
     $x = 20;
@@ -59,9 +60,10 @@ Variable diibaratkan kotak untuk menyimpan data. Kita mendefinisikan variable de
 ```
 
 ## 2. Operator Aritmatika
-    Operator Aritmatika digunakan untuk melakukan operasi 
-    aritmatik terhadap nilai numerik, seperti penjumlahan, 
-    pengurangan, perkalian, pembagian, dan sebagainya.
+
+Operator Aritmatika digunakan untuk melakukan operasi 
+aritmatik terhadap nilai numerik, seperti penjumlahan, 
+pengurangan, perkalian, pembagian, dan sebagainya.
 
 ```php
     $x = 20;
@@ -194,7 +196,7 @@ $x xor $y
 
 ## 1. Statement if
 
-Statement if memungkinkan kita untuk membuat percabangan kondisional. Jika Anda meletakkan kondisi di dalam () setelah if, code diantara tanda kurung { } akan dijalankan hanya jika kondisi benar. Gambar di bawah menunjukkan bagaimana statement if ditulis.
+Statement if memungkinkan kita untuk membuat percabangan kondisional. Jika kita meletakkan kondisi di dalam () setelah if, code diantara tkita kurung { } akan dijalankan hanya jika kondisi benar. Gambar di bawah menunjukkan bagaimana statement if ditulis.
 
 ```php 
     $x = 20;
@@ -222,6 +224,263 @@ Kita dapat menambahkan code untuk ketika kondisi adalah false. Jika statement if
         // code ini akan dijalankan
     }
 
+```
+
+```php
+    $nilai = 80;
+
+    if($nilai < 25){
+    echo "Nilai: D";
+    } else if($nilai < 50){
+    echo "Nilai: C";
+    } else if($nilai < 80){
+    echo "Nilai: B";
+    } else {
+    echo "Nilai: A";
+    }
+
+    // Hasil: Nilai A
+```
+
+## 3. Statement Switch
+
+Statemen switch digunakan untuk menjalankan satu diantara banyak blok kode
+berrdasarkan kecocokan nilai yang dievaluasi.
+
+```php
+   switch(variabel){
+        case a:
+            // blok kode A
+            break;
+        case b:
+            // blok kode B
+            break;
+        ...
+        default:
+            // blok kode default
+    } 
+```
+Pada statemen switch, nilai variabel akan dievaluasi kecocokannya untuk setiap
+case. Bila ditemukan kecocokan pada salah satu case, maka blok kode 
+pada case tersebut akan dijalankan. Umumnya blok kode pada setiap case diakhiri
+dengan perintah break; agar program langsung keluar dari blok statemen switch dan
+tidak perlu lagi mengecek sisa case di bawahnya. Apabila tidak ada case yang cocok dengan nilai variabel, maka blok kode pada bagian default yang akan dijalankan.
+
+## 4. Statement Swith(2)
+
+Kita sudah paham bahwa switch akan menjalankan blok kode yang casenya cocok
+dengan nilai variabel yang dievaluasi. Lalu bagaimana bila kita ingin 
+menjalankan blok kode yang sama untuk beberapa case berbeda?
+
+```php 
+    switch($binatang){
+        case "ayam":
+            echo "jumlah kaki 2";
+            break;
+        case "bebek":
+            echo "jumlah kaki 2";
+            break;
+        case "burung":
+            echo "jumlah kaki 2";
+            break;
+        case "sapi":
+            echo "jumlah kaki 4";
+            break;
+        case "kambing":
+            echo "jumlah kaki 4";
+            break;
+        default:
+            echo "jenis binatang tidak terdaftar.";
+    }
+```
+
+Akan tetapi switch memperbolehkan cara yang lebih sederhana 
+agar kita tidak perlu mengulang baris kode yang sama.
+
+```php
+    switch($binatang){
+        case "ayam":
+        case "bebek":
+        case "burung":
+            echo "jumlah kaki 2";
+            break;
+        case "sapi":
+        case "kambing":
+            echo "jumlah kaki 4";
+            break;
+        default:
+            echo "jenis binatang tidak terdaftar.";
+    }
+```
+
+# H. Array
+
+Kita dapat menyimpan beberapa nilai secara bersamaan menggunakan array, 
+sedangkan variable hanya dapat menangani satu nilai seperti yang kita pelajari 
+sebelumnya. Sebuah array dapat dibayangkan seperti kotak dengan partisi 
+didalamnya; setiap ruang berisi data, dan nama untuk setiap ruang diberi nomor 
+index (0, 1, 2…).
+
+Sintaksis dasar untuk mendeklarasikan sebuah array adalah sebagai berikut: 
+
+```php
+$arrayName = array(nilai1, nilai2,…);
+```
+Nomor index ditetapkan untuk setiap element array dalam urutan dari 0 
+hingga element terakhir. Untuk mengambil data dari sebuah array, kita dapat
+menggunakan nomor index seperti: $arrayName[nomorIndex].
+
+```php
+    $colors = array('Merah', 'Biru', 'Kuning');
+
+    echo $colors[0]; // Merah
+    
+    $colors[] = 'Putih';
+    
+    echo $colors[3]; // Putih
+```
+ 
+# I. Array Associative
+
+Array associative memungkinkan kita untuk mengelola kumpulan data seperti array 
+biasa. Perbedaannya adalah daripada menggunakan nomor index untuk mengelola
+element individu, kita dapat menentukan nilai sebagai kunci. Kunci bisa berbentuk 
+string. kita dapat memasangkan kunci dan nilainya dengan => sebagai berikut:
+
+```php 
+    $arrayName = array('namaKunci' => 'nilai1', ...);
+```        
+
+```php
+    $scores = array('Matematika' => 70, 'Bahasa' => 90, 'Sains' => 80);
+    
+    $scores['Sains'] += 5;
+    
+    echo $scores['Sains'];
+```
+
+# J. Perulangan
+
+Kita menggunakan loop untuk melakukan sesuatu berulang kali. Misalnya, 
+kita ingin mencetak angka dari 1 hingga 100. Dengan menggunakan loop, 
+kita dapat mengurangi code panjang dan berulang menjadi hanya beberapa baris 
+seperti yang ditunjukkan pada contoh di bawah ini.
+
+## 1. For 
+```php
+    for ($i = 51; $i <= 100; $i++) {
+      echo $i;
+      echo '<br>';
+    }
+    // Hasil: 12345
+```
+
+## 2. While 
+Loop while memungkinkan kita untuk mengulang code seperti loop for. 
+Ketika sebuah kondisi ditentukan, code dalam loop akan dijalankan berulang kali  selama nilainya adalah true. Berbeda dari loop for, code untuk yang menaikkan
+variable, $i++;, harus ditulis dalam loop. Ini adalah perbedaan penting antara
+loop while dan for.
+
+```php
+    $i = 1; // inisialisasi variable
+    while($i <= 10) { // memeriksa kondisi
+        echo $i; // kode perulangan yg dijalankan selama kondisi true
+        $i++ // memperbarui nilai pada variable $i dengan increment 1
+    }
+```
+
+## 3. Do While
+
+Statemen do..while mirip seperti statemen while, yakni menjalankan blok kode
+berulang-ulang selama kondisi yang dicek bernilai true.
+
+```php
+$x = 0;
+do {
+    // kode yang akan dijalankan berulang
+    echo $j;
+    $j++
+} while (j < 5>);
+```
+
+## 4. Infinite Loop (Tak Terbatas)
+
+Jika kita lupa memperbarui nilai variable yang digunakan untuk kondisi di akhir
+loop while, ini akan menyebabkan loop infinite karena kondisinya akan selalu true. 
+Loop infinite akan memberikan beban besar pada komputer, jadi pastikan ada kondisi false di titik tertentu sebelum menjalankannya.
+
+```php 
+    $i = 1;
+    while($i <= 100) { 
+        echo $i;
+        // tidak ada proses pembaruan nilai $i
+        // maka loop untuk mencetak nilai dari $i
+        // akan dilakukan selamanya karena kondisi selalu bernilai true
+    }
+
+```
+## 5. Foreach Loop
+
+Perulangan dengan statemen foreach hanya berlaku pada variabel array, 
+digunakan untuk mengulang membaca setiap elemen array.
+
+```php
+
+    foreach ($array as $value) {
+        // kode yang akan dijalankan berulang
+    }
+
+    // cases:
+    $kegemaran = array(
+        'aktivitas' => 'Berenang', 
+        'makanan' => 'Singkong Keju', 
+        'minuman' => 'Jus Alpukat'
+    );
+
+    foreach ($kegemaran as $value) {
+        echo "$value <br>";
+    }
+    // Hasil: 
+    // Berenang
+    // Singkong Keju
+    // Jus Alpukat
+
+```
+
+
+## 5. Stament break dan continue pada perulangan
+
+Statement break secara paksa akan mengakhiri loop dan digunakan dalam statement 
+berulang seperti loop (for, while, foreach, dll). Statement break umumnya 
+digunakan dalam kombinasi dengan statement conditional seperti statement if.
+
+1. statement break;
+
+```php
+    for($i = 1; $i <= 10; $i++) {
+        if ($i > 5) {
+            break; // keluar dari looping ketika $i = 6
+        }
+        echo $i;
+    }
+    // Hasil: 123456
+```
+
+2. stetemnt continue
+
+Ketika statement break mengeluarkan kita dari loop, statement continue hanya 
+melewatkan iterasi saat ini tetapi tetap melanjutkan loop. Statement continue 
+juga bisa digunakan dalam statement iteratif seperti for, while,foreach, dll.
+
+```php
+    for($i = 1; $i <= 10; $i++) {
+        if ($i % 2 === 0) {
+            continue;   // ketika $i adalah bilangan genap, 
+                        // proses loop saat tersebut akan diloncati
+        }
+        echo $i;
+    }
+    // Hasil: 13579
 ```
 
 
