@@ -484,6 +484,31 @@ juga bisa digunakan dalam statement iteratif seperti for, while,foreach, dll.
 ```
 
 
+K. Fungsi
 
+Function adalah bagian code yang dirancang untuk menyelesaikan tugas tertentu dan 
+mereturn hasil. Beberapa function umum dan berguna sudah tertanam di PHP; 
+function ini disebut built-in function. Misalnya ``strlen`` mengembalikan jumlah
+karakter dalam sebuah string. Di sini, nilai dalam tanda kurung ``()`` disebut argument.
+
+kita juga dapat membuat function sendiri. Saat kita mengelompokkan code di satu tempat, kita dapat membuat perubahan ke semua tempat yang digunakan sekaligus dengan mengedit function yang memuatnya. Ini jauh lebih mudah dikelola daripada mengubah banyak baris code yang terpisah dan hampir identik. Mari pelajari lebih lanjut tentang cara mendefinisikan function di slide berikutnya.
+
+Gunakan sintaksis: ``function functionName() {...}`` untuk membuat function. 
+
+panggil fungsi tsb menggunakan tanda kurung: ``functionName()``.
+
+```php
+    // Definisikan function getCircleArea 
+    function getCircleArea($radius) {
+      return $radius * $radius * 3;
+    }
+    
+    // Panggil function getCircleArea dan tetapkan nilai return ke variable $circleArea
+    $circleArea = getCircleArea(5);
+    
+    // Cetak variable $circleArea
+    echo $circleArea;
+```
+    
 
 
